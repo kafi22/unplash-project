@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+    --darkMood-bgColor: black;
+    --darkMood-textColor:white;
+    --transition-Mood: color .3s ease-in-out, background-color .3s ease-in-out;
+    --bg-Color: white;
+    --text-Color:black;
+}
+
+body {
+    transition: var(--transition-Mood);
+    background-color: var(--bg-Color);
+    color: var(--text-Color);
+}
+/* 
+@media (prefers-color-scheme:dark) {
+   
+    :root{
+        --darkMood-bgColor: black;
+        --darkMood-textColor:white;
+    }
+    
+} */
+
+.dark-theme {
+    background-color: var(--darkMood-bgColor);
+    color: var(--darkMood-textColor);
+}
