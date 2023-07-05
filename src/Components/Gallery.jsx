@@ -9,7 +9,7 @@ const Gallery = () => {
  const {search} = allFeature
 
   const url = `https://api.unsplash.com/search/photos?client_id=${import.meta.env.VITE_API_KEY}`;
-  console.log(import.meta.env.VITE_API_KEY);
+
 
   const response =  useQuery({
 
